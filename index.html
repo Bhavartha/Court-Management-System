@@ -1,118 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Case Management System</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
-		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/responsiveslides.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="js/responsiveslides.min.js"></script>
-		  <script>
-		    // You can also use "$(window).load(function() {"
-			    $(function () {
-			
-			      // Slideshow 1
-			      $("#slider1").responsiveSlides({
-			        maxwidth: 1600,
-			        speed: 600
-			      });
-			});
-		  </script>
-	</head>
-	<body>
-		<!--start-wrap-->
-		
-			<!--start-header-->
-			<div class="header">
-				<div class="wrap">
-				<!--start-logo-->
-				<div class="logo">
-					<a href="index.html" style="font-size: 50px;"><img src="images/a.png" height="60px" > Case Management System</a>
-				</div>
-				<!--end-logo-->
-				<!--start-top-nav-->
-				<div class="top-nav">
-					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						
-						<li><a href="contact.php">contact</a></li>
-					</ul>					
-				</div>
-				<div class="clear"> </div>
-				<!--end-top-nav-->
-			</div>
-			<!--end-header-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/responsiveslides.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 1
+			$("#slider1").responsiveSlides();
+		});
+	</script>
+	<title>CMS</title>
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<header class="text-gray-700 body-font" id="home">
+		<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+			<a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/index.html">
+				<img src="/images/a.png" class="h-12">
+				<span class="ml-3 text-xl">Court Management System</span>
+			</a>
+			<nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+				<a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+				<a class="mr-5 hover:text-gray-900" href="contact.php">Contact</a>
+			</nav>
 		</div>
-		<div class="clear"> </div>
-			<!--start-image-slider---->
-					<div class="image-slider">
-						<!-- Slideshow 1 -->
-					    <ul class="rslides" id="slider1">
-        
-					      <li><img src="images/slide5.jpg" alt=""></li> 
-					      <li><img src="images/slide4.jpg" alt=""></li>
-					      <li><img src="images/slide3.jpg" alt=""></li>
-					      <li><img src="images/slide1.jpg" alt=""></li>
+	</header>
+	<!-- Navbar end -->
+	<div class="image-slider">
+		<!-- Slideshow 1 -->
+		<ul class="rslides" id="slider1">
 
-					    </ul>
-						 <!-- Slideshow 2 -->
-					</div>
-					<!--End-image-slider---->
-		    <div class="clear"> </div>
-		    <div class="content-grids">
-		    	<div class="wrap">
-		    	<div class="section group">
-								
-							
-				<div class="listview_1_of_3 images_1_of_3">
-					<div class="listimg listimg_1_of_2">
-						  <img src="images/user.png">
-					</div>
-					<div class="text list_1_of_2">
-						  <h3>Clients</h3>
-						  
-						  <div class="button"><span><a href="hms/user-login.php">Click Here</a></span></div>
-				    </div>
-				</div>	
+			<li><img src="images/slide5.jpg" alt=""></li>
+			<li><img src="images/slide4.jpg" alt=""></li>
+			<li><img src="images/slide3.jpg" alt=""></li>
+			<li><img src="images/slide1.jpg" alt=""></li>
 
-				<div class="listview_1_of_3 images_1_of_3">
-					<div class="listimg listimg_1_of_2">
-						  <img src="images/lawyer.png">
-					</div>
-					<div class="text list_1_of_2">
-						  <h3>Lawyer Login</h3>
-						
-						  <div class="button"><span><a href="hms/lawyer/">Click Here</a></span></div>
-					</div>
-				</div>
+		</ul>
+		<!-- Slideshow 2 -->
+	</div>
 
-
-					<div class="listview_1_of_3 images_1_of_3">
-					<div class="listimg listimg_1_of_2">
-						  <img src="images/admin1.png">
+	<!-- Login -->
+	<section class="text-gray-700 body-font" id="login">
+		<div class="container px-5 py-24 mx-auto">
+			<div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+				<a class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center mx-auto" href="hms/user-login.php">
+					<div class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5">
+						<img src="images/user.png" class="w-20 h-20">
 					</div>
-					<div class="text list_1_of_2">
-						  <h3>Admin Login</h3>
-						
-						  <div class="button"><span><a href="hms/admin">Click Here</a></span></div>
-				     </div>
-				</div>			
+					<div class="flex-grow">
+						<h2 class="text-gray-900 text-lg title-font font-medium mb-3">Client Login</h2>
+						<p class="leading-relaxed text-base">Clients can login here to book an appointment with the
+							lawyers or to follow up.
+						</p>
+					</div>
+				</a>
+
+				<a class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center mx-auto" href="hms/lawyer/">
+					<div class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5">
+						<img src="images/lawyer.png" class="w-20 h-20">
+					</div>
+					<div class="flex-grow">
+						<h2 class="text-gray-900 text-lg title-font font-medium mb-3">Lawyer Login</h2>
+						<p class="leading-relaxed text-base">Lawyers can login here to handle communication with
+							clients.
+						</p>
+					</div>
+				</a>
+
+				<a class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center mx-auto" href="hms/admin/">
+					<div class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5">
+						<img src="images/admin1.png" class="w-20 h-20">
+					</div>
+					<div class="flex-grow">
+						<h2 class="text-gray-900 text-lg title-font font-medium mb-3">Admin Login</h2>
+						<p class="leading-relaxed text-base">Admin can login here to control the overall court process.
+						</p>
+					</div>
+				</a>
 			</div>
-		    </div>
-		   </div>
-		   
-		   <div class="clear"> </div>
-		   <div class="footer">
-		   	 <div class="wrap">
-		   	<div class="footer-left">
-		   			
-		   	</div>
-		   
-		   	<div class="clear"> </div>
-		   </div>
-		   </div>
-		<!--end-wrap-->
-	</body>
-</html>
+		</div>
+	</section>
 
+</body>
+
+</html>
